@@ -1,0 +1,14 @@
+<snippet>
+	<content><![CDATA[
+WITH ${1:nombre_cte}(${2:parametros})
+AS
+(${3:select query})
+SELECT ${4:parametros}
+FROM ${1:nombre_cte}
+
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>with-common-table-expression (sql)</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<scope>source.sql</scope>
+</snippet>

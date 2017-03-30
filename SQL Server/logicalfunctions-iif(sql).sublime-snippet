@@ -1,0 +1,9 @@
+<snippet>
+	<content><![CDATA[
+IIF(${1:condition}, ${2:if_true}, ${3:if_false})
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>logicalfunctions-iif (sql)</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<scope>source.sql</scope>
+</snippet>

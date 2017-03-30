@@ -1,0 +1,9 @@
+<snippet>
+	<content><![CDATA[
+CREATE SEQUENCE ${1:schema}.${2:nombre} AS ${3:type} STARTS WITH ${4:inicio} INCREMENT BY ${5:fin}
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>create-sequence (sql)</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<scope>source.sql</scope>
+</snippet>

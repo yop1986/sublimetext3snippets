@@ -1,0 +1,10 @@
+<snippet>
+	<content><![CDATA[
+${1:--Si es null devuelve el valor}
+ISNULL(${2:columna/variable}, ${3:valor})
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>isnull (sql)</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<scope>source.sql</scope>
+</snippet>

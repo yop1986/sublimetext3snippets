@@ -1,0 +1,17 @@
+<snippet>
+	<content><![CDATA[
+MERGE INTO ${1:shcema.nombre AS alias} 
+	USING ${2:shcema.nombre AS alias2} 
+	ON ${3:(alias2.cond = alias.cond)}
+WHEN MATCHED THEN
+	UPDATE SET
+	${4:alias.attr = alias2.valor, alias.attr2 = alias2.valor2}
+WHEN NOT MATCHED THEN
+	INSERT(${5:columns})
+	VALUES (${6:values});
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>merge upsert (sql)</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<scope>source.sql</scope>
+</snippet>

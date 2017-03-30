@@ -1,0 +1,40 @@
+<snippet>
+	<content><![CDATA[
+USE ${1:base_datos}
+GO
+IF OBJECT_ID('${2:schema}.${3:nombre_proc}') IS NOT NULL
+BEGIN
+    DROP PROCEDURE ${2:schema}.${3:nombre_proc}
+    IF OBJECT_ID('${2:schema}.${3:nombre_proc}') IS NOT NULL
+        PRINT '<<< FAILED DROPPING PROCEDURE ${2:schema}.${3:nombre_proc} >>>'
+    ELSE
+        PRINT '<<< DROPPED PROCEDURE ${2:schema}.${3:nombre_proc} >>>'
+END
+GO
+CREATE PROC ${2:schema}.${3:nombre_proc} (
+	${5:parametros}
+)
+AS
+
+/******************************************************************************
+      Archivo:               ${3:nombre_proc}.sql
+      Stored procedure:      ${3:nombre_proc}
+      Base de datos:         ${1:base_datos}
+******************************************************************************
+                  		PROPOSITO
+${6:proposito}
+
+       		 			MODIFICACIONES
+	FECHA			AUTOR					RAZON
+	${7:modificaciones}
+*****************************************************************************/
+
+	${8:sql statements}
+
+GO
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>create-procedure (sql)</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<scope>source.sql</scope>
+</snippet>

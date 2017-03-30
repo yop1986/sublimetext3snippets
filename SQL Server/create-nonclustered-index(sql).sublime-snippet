@@ -1,0 +1,9 @@
+<snippet>
+	<content><![CDATA[
+CREATE NONCLUSTERED INDEX ${1:nombre} ON ${2:dbo}.${3:tabla}(${4:campo(s)})
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>create-nonclustered-index (sql)</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<scope>source.sql</scope>
+</snippet>

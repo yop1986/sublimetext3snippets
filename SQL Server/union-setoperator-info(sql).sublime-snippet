@@ -1,0 +1,12 @@
+<snippet>
+	<content><![CDATA[
+${1:--UNION, return distinct rows from both queries; UNION ALL return repeated data
+--Column aliases: must be expressed in first query
+--Number of columns: must be the same
+--Data types: must be compatible for implicit conversions (or converted explicitly)}
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>union-setoperator-info (sql)</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<scope>source.sql</scope>
+</snippet>

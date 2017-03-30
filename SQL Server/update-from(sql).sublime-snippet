@@ -1,0 +1,12 @@
+<snippet>
+	<content><![CDATA[
+UPDATE ${1:schema}.${2:nombre}
+	SET ${3:col = alias.col,}
+	FROM ${4:schema}.${5:tabla} AS ${6:alias}
+	${7:WHERE ${8:condicion}}
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>update-from (sql)</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<scope>source.sql</scope>
+</snippet>

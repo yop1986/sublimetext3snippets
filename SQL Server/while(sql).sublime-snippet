@@ -1,0 +1,12 @@
+<snippet>
+	<content><![CDATA[
+WHILE ${1:condition}
+  BEGIN
+  	${2:statements}
+  END
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>while (sql)</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<scope>source.sql</scope>
+</snippet>

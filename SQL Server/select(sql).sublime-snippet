@@ -1,0 +1,14 @@
+<snippet>
+	<content><![CDATA[
+SELECT ${1:*} 
+FROM ${2:table source}
+${3:WHERE ${4:search condition}}
+${5:GROUP BY ${6:group by list}
+${7:HAVING ${8:search condition}}}
+${9:ORDER BY ${10:order by list} ${11:OFFSET ${12:number} ROWS FETCH NEXT ${13:number} ROWS ONLY}}
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>select (sql)</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<scope>source.sql</scope>
+</snippet>

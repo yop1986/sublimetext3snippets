@@ -1,0 +1,12 @@
+<snippet>
+	<content><![CDATA[
+SELECT ${1:*} 
+FROM ${2:table1 AS nombre}
+	${3:LEFT|RIGHT|FULL} OUTER JOIN ${4:table2 AS nombre2}
+	ON ${5:param1 = param2}
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>selec-outer-join (sql)</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<scope>source.sql</scope>
+</snippet>

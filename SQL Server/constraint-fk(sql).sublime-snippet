@@ -1,0 +1,10 @@
+<snippet>
+	<content><![CDATA[
+CONSTRAINT ${1:tabla}_fk_${2:campo} FOREIGN KEY (${3:campo}) REFERENCES ${4:schema}.${5:tabla}(${6:campo})
+	${7:ON DELETE ${8:regla} ON UPDATE ${9:regla}}
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>constraint-fk (sql)</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<scope>source.sql</scope>
+</snippet>
