@@ -15,7 +15,17 @@ CREATE PROCEDURE ${1:bbdd}.${2:sp_nombre} (
     Fecha       Usuario     Comentario
     ${5:fecha}  ${6:usuario}	Creación del procedimiento
 */
+`${2:sp_nombre}`:
 BEGIN
+    # declaración de variables
+    
+    DECLARE EXIT HANDLER FOR SQLEXCEPTION BEGIN
+        IF ISNULL(out_errormsg) THEN
+            SELECT 'ERROR EL INGRESAR EL MOVIMIENTO' INTO out_errormsg;
+        END IF;
+        ROLLBACK;
+    END;
+
     ${7:codigo}
 END
 ]]></content>
