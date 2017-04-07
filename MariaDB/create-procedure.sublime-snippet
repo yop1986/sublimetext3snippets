@@ -1,8 +1,8 @@
 <snippet>
 	<content><![CDATA[
-DROP PROCEDURE IF EXISTS ${1:bbdd}.${2:sp_nombre};
+DROP PROCEDURE IF EXISTS ${2:sp_nombre};
 
-CREATE PROCEDURE ${1:bbdd}.${2:sp_nombre} (
+CREATE PROCEDURE ${2:sp_nombre} (
     ${3:IN|OUT|INOUT param type[,...]}
 )
 /*
